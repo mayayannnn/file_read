@@ -59,7 +59,7 @@ for i in time:
     target = '.'
     idx = i.find(target)
     r = i[:idx] 
-    new_path = shutil.move(rf"file/folder1\{i}",rf"file/folder2/{r}")
+    new_path = shutil.move(rf"file/folder1/{i}",rf"file/folder2/{r}")
     print(new_path)
 time.clear
 

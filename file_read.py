@@ -1,12 +1,12 @@
 import os
 import shutil
 
-list = os.listdir(r"../test\folder1")
+list = os.listdir(r"file\folder1")
 files = []
 time = []
 
 for i in list:
-    path = os.path.join(r"../test\folder1", i)
+    path = os.path.join(r"file\folder1", i)
     if os.path.isfile(path):
         files.append(str(i))
 
@@ -59,7 +59,7 @@ for i in time:
     target = '.'
     idx = i.find(target)
     r = i[:idx] 
-    new_path = shutil.move(rf"../test\folder1\{i}",rf"../test\folder2\{r}")
+    new_path = shutil.move(rf"file\folder1\{i}",rf"file\folder2\{r}")
     print(new_path)
 time.clear
 
